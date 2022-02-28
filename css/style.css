@@ -1,0 +1,39 @@
+body{
+  font-family,Wide Latin, Arial;
+  background-image:linear-gradient(#7a0db5,#ffffff);
+}
+h1 {
+  text-align: center;
+  font-family:Candara,Calibri,Arial;
+}
+#content {
+  margin: auto;
+  text-align: justify;
+  width:500px;
+}
+.segment{
+  padding: 10px;
+  border: 1px solid #000000;
+  /* border-width: 1px;
+  border-color: #000000;
+  border-style: solid; */
+
+}
+
+.segment img {
+  max-width: 145px;
+  float: left;
+  margin: 0px 10px 10px 0px;
+}
+/*
+only segment
+*/
+p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.segment .centerimg{
+float: none;
+margin: auto;
+}
