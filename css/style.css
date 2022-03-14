@@ -14,6 +14,7 @@ h1 {
 .segment{
   padding: 10px;
   border: 1px solid #000000;
+  margin-bottom: 10px
   /* border-width: 1px;
   border-color: #000000;
   border-style: solid; */
@@ -22,8 +23,6 @@ h1 {
 
 .segment img {
   max-width: 145px;
-  float: left;
-  margin: 0px 10px 10px 0px;
 }
 /*
 only segment
@@ -33,7 +32,11 @@ p{
   margin-bottom: 0px;
 }
 
-.segment .centerimg{
-float: none;
-margin: auto;
+.segment .rightimg{
+  float: right;
+    margin-left: 10px
+}
+.segment .leftimg{
+    margin-Right: 10px
+  float: left;
 }
