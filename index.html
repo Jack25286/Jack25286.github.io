@@ -1,30 +1,44 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
   <head>
-    <title>no no no no no no no no no no</title>
-    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="style.css">
     <script type="text/javascript">
-    var randomNumber = Math.floor(Math.random() * 3);
-    var phrases = [`Hello`, `Hi`, `hfhfh`];
-    console.log(phrases[randomNumber]);
+      function openNav() {
+        var navBox = document.getElementById('menu');
+        navBox.style.display = 'block';
+      }
+
+
+      function closeNav() {
+        var navBox = document.getElementById('menu');
+        navBox.style.display = 'none';
+      }
     </script>
   </head>
   <body>
-    <div id="content">
-  <div id="headerBox">
-<h1>My Webpage</h1>
-  </div>
-  <div class="segment">
-    <img src="img/theArrow.jfif" class="leftimg">
-    <p> Suspendisse potenti. Nunc turpis odio, dapibus eu vulputate et, aliquam consequat ex. Nunc consequat turpis at tincidunt faucibus. Duis at quam placerat, consequat elit et, commodo orci. Phasellus vel diam cursus, rhoncus turpis sed, volutpat turpis. Aliquam gravida in eros non fringilla. Morbi commodo volutpat gravida. Aenean ut leo elementum, posuere orci id, placerat odio. Proin bibendum sit amet arcu sit amet aliquam. Proin quis nunc faucibus, finibus est ac, dignissim ex. Donec quis eleifend dui. Etiam ultrices aliquam efficitur.</p>
-    <img src="img/theGreenArrow.jfif" class="rightimg">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras massa diam, imperdiet quis bibendum ac, vestibulum et orci. Praesent nunc nibh, bibendum vitae malesuada eu, condimentum dapibus enim. Pellentesque blandit nisi quis enim congue, non suscipit dui sollicitudin. Nulla gravida, nunc vel egestas volutpat, lacus leo laoreet tortor, at dignissim arcu justo at sapien. In eget risus dictum, posuere turpis sit amet, viverra ipsum. Vestibulum sit amet facilisis nisi.</p>
-  </div>
-  ,<div class="segment">
-    <h3>Get To School</h3>
-    <a href="game.html"> Play my game</a>
-  </div>
-
-    </div>
-  </body>
-</html>
+    <p style="color:rgb(109, 28, 201);">Test</p>
+    <div id="openmenu" onclick="openNav()">
+        ☰
+      </div>
+      <div  id="menu">
+        <div  id = "closemenu" class="menuItem" onclick="closeNav()">
+          <a href="#">Close menu</a>
+        </div>
+        <div class="menuItem">
+          <a href="home.html">Home</a>
+        </div>
+        <div class="menuItem">
+          <a href="game.html">Get To school 3</a>
+        </div>
+        <div class="menuItem">
+          <a href="jsfighter/JSFighter.html">JSFighter</a>
+        </div>
+      </div>
+      <button onclick="document.getElementById('myImage').src='img/pic_bulbon.gif'">Turn on the light</button>
+      <img id="myImage" src="img/pic_bulboff.gif" style="width:100px">
+      <button onclick="document.getElementById('myImage').src='img/pic_bulboff.gif'">Turn off the light</button>
+    </body>
+    </html>
